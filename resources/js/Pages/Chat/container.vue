@@ -74,7 +74,6 @@
                 this.currentRoom = room;
             },
             getMessages(){
-                alert("hola");
                 axios.get('/chat/room/' + this.currentRoom.id + '/messages')
                 .then(response => {
                     this.messages = response.data;
